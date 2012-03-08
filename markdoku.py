@@ -1188,7 +1188,6 @@ class Markdown(object):
         return "<h%d%s>%s</h%d>\n\n" % (n, header_id_attr, html, n)
 
     _atx_h_re = re.compile(r'''
-        ^(\={1,6})  # \1 = string of ='s
         ^(\#{1,6})  # \1 = string of #'s - for markdown interoperability
         [ \t]*
         (.+?)       # \2 = Header text
